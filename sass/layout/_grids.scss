@@ -1,0 +1,20 @@
+// Requirements
+// ============
+@import "compass";
+@import "compass/css3"; 
+@import "compass/utilities";
+@import "susy";
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  output: float,
+  global-box-sizing: border-box,
+  use-custom: (rem: true, box-sizing: false),
+  debug: (image: hide), //show, show-columns
+);
+
+$menu: layout(10 0 fluid float inside);
+
+//shorthand $susy: layout(12 .25 fluid float inside);
+//box-sizing: false - Certain Susy features require changes to box-sizing, and use the compass mixin by default if it's available. You can turn that off in you Susy settings (see custom box-sizing in the docs).
